@@ -1,13 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 2% 10% 0 10%;
+}
+.navbar .navbar_text {
+  margin-left: auto;
+}
+.navbar a {
+  padding: 2rem;
+  color: #ff6060;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.navbar a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.banner {
+  position: relative;
+  margin: 3rem auto auto auto;
+  max-width: 80%;
+  height: 250px;
+  z-index: 7;
+  overflow: hidden;
+}
+.banner img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.banner .banner_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+.banner .banner_text h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 1px 1px 8px black;
+}
+
+.background {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #F6F6F6;
+  margin: 3rem auto auto auto;
+  max-width: 80%;
+  border-radius: 1.5rem;
+}
+
+.cards_appart {
+  width: 100%;
+  position: relative;
+  height: 250px;
+}
+.cards_appart .cards_appart_img {
+  min-width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 1.5rem;
+}
+.cards_appart .cards_appart_text {
+  color: white;
+  text-shadow: 1px 1px 8px black;
+  position: absolute;
+  top: 175px;
+  left: 10px;
+  max-width: 50%;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,13 @@
+@use "variables.scss" as c;
+
+.background {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: c.$colour-tertiary;
+    margin: 3rem auto auto auto;
+    max-width: 80%;
+    border-radius: 1.5rem;
+}

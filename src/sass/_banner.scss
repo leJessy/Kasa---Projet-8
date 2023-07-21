@@ -1,0 +1,33 @@
+.banner {
+    position: relative;
+    margin: 3rem auto auto auto;
+    max-width: 80%;
+    height: 250px;
+    z-index: 7;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+    .banner_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        z-index: 4;
+        & h1 {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 1px 1px 8px black;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use "variables.scss" as c;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 2% 10% 0 10%;
+    & .navbar_text {
+        margin-left: auto;
+    }
+    a {
+        padding: 2rem;
+        color: c.$colour-primary;
+        font-size: 1.3rem;
+        font-weight: bold;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
