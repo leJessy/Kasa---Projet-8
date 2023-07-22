@@ -31,3 +31,15 @@
         }
     }
 }
+
+@media screen and (width <= 1000px) {
+    .banner {
+        max-width: 95%;
+        .banner_text {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

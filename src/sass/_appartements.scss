@@ -19,3 +19,11 @@
         font-weight: bold;
     }
 }
+
+@media screen and (width <= 1000px) {
+    .cards_appart {
+        .cards_appart_text {
+            max-width: 80%;
+        }
+    }
+}
