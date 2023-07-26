@@ -2,9 +2,8 @@
     width: 100%;
     position: relative;
     height: 250px;
-
     .cards_appart_img {
-        min-width: 100%;
+        width: 400px;
         object-fit: cover;  
         height: 250px;
         border-radius: 1.5rem;
@@ -24,6 +23,9 @@
     .cards_appart {
         .cards_appart_text {
             max-width: 80%;
+        }
+        .cards_appart_img {
+            width: 350px;
         }
     }
 }

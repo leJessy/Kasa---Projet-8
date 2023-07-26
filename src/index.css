@@ -96,7 +96,7 @@ body {
   border-radius: 1.5rem;
 }
 
-@media screen and (width <= 1400px) {
+@media screen and (width <= 1600px) {
   .background {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -118,7 +118,7 @@ body {
   height: 250px;
 }
 .cards_appart .cards_appart_img {
-  min-width: 100%;
+  width: 400px;
   object-fit: cover;
   height: 250px;
   border-radius: 1.5rem;
@@ -136,6 +136,9 @@ body {
 @media screen and (width <= 1000px) {
   .cards_appart .cards_appart_text {
     max-width: 80%;
+  }
+  .cards_appart .cards_appart_img {
+    width: 350px;
   }
 }
 .footer {
@@ -176,70 +179,6 @@ body {
   margin-top: 2rem;
   margin-left: 10%;
   margin-right: 10%;
-}
-.Appartements-page img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.Appartements-page__flats {
-  display: flex;
-}
-.Appartements-page__flats h3 {
-  margin-block: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-.Appartements-page__flats .Appartements-page__title {
-  flex-grow: 1;
-}
-.Appartements-page__flats .Appartements-page__title h1 {
-  margin-block: 0;
-}
-.Appartements-page__flats .Appartements-page__title .adjectifs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
-  gap: 1rem;
-}
-.Appartements-page__flats .Appartements-page__title .adjectifs p {
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
-  border: 1px solid;
-  background-color: #ff6060;
-  color: white;
-  border-radius: 1.5rem;
-  text-align: center;
-}
-.Appartements-page__flats .Appartements-page__details .Appartements-page__owner {
-  display: flex;
-  gap: 1rem;
-}
-.Appartements-page__flats .Appartements-page__details .Appartements-page__owner .Appartements-page__details__photo {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-.Appartements-page__flats .Appartements-page__details .Appartements-page__details__ratings {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  gap: 0.1rem;
-  font-size: 2rem;
-  margin-top: 15px;
-}
-.Appartements-page__flats .Appartements-page__details .Appartements-page__details__ratings .Full {
-  color: #ff6060;
-}
-.Appartements-page__flats .Appartements-page__details .Appartements-page__details__ratings .Empty {
-  color: #E3E3E3;
-}
-.Appartements-page__flats h2 {
-  margin-bottom: 0;
-  margin-top: 5px;
 }
 
 .Appartements-page__description p {
@@ -299,32 +238,9 @@ body {
   .Menu_Colapse {
     flex-direction: column;
   }
-  .Appartements-page__flats {
-    flex-direction: column;
-  }
-  .Appartements-page__details {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .Appartements-page__owner {
-    flex: 2;
-    justify-content: end;
-  }
-  .adjectifs {
-    gap: 0.2rem;
-  }
-  .adjectifs p {
-    font-size: 15px;
-    padding-inline: 0;
-    padding-block: 0;
-  }
   .Appartements-page {
     margin-left: 2%;
     margin-right: 2%;
-  }
-  .Appartements-page__details__ratings {
-    position: relative;
-    top: -25px;
   }
 }
 .aboutus-page {
@@ -382,6 +298,118 @@ body {
   .aboutus-page .Menu_Colapse__about {
     width: 100%;
     margin: auto;
+  }
+}
+.appartementsbanner {
+  margin-top: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.appartementsbanner img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (width <= 825px) {
+  .appartementsbanner {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+.Spec-page {
+  color: #ff6060;
+  margin-top: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Spec-page__flats {
+  display: flex;
+}
+.Spec-page__flats h3 {
+  margin-block: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.Spec-page__flats .Spec-page__title {
+  flex-grow: 1;
+}
+.Spec-page__flats .Spec-page__title h1 {
+  margin-block: 0;
+}
+.Spec-page__flats .Spec-page__title .tags {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+  gap: 1rem;
+}
+.Spec-page__flats .Spec-page__title .tags p {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: 1px solid;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.Spec-page__flats .Spec-page__details .Spec-page__owner {
+  display: flex;
+  gap: 1rem;
+}
+.Spec-page__flats .Spec-page__details .Spec-page__owner .Spec-page__details__photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.Spec-page__flats .Spec-page__details .Spec-page__details__ratings {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 0.1rem;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.Spec-page__flats .Spec-page__details .Spec-page__details__ratings .Full {
+  color: #ff6060;
+}
+.Spec-page__flats .Spec-page__details .Spec-page__details__ratings .Empty {
+  color: #E3E3E3;
+}
+.Spec-page__flats h2 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+@media screen and (width <= 825px) {
+  .Spec-page__flats {
+    flex-direction: column;
+  }
+  .Spec-page__details {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Spec-page__owner {
+    flex: 2;
+    justify-content: end;
+  }
+  .tags {
+    gap: 0.2rem;
+  }
+  .tags p {
+    font-size: 15px;
+    padding-inline: 0;
+    padding-block: 0;
+  }
+  .Spec-page {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .Spec-page__details__ratings {
+    position: relative;
+    top: -15px;
   }
 }
 
