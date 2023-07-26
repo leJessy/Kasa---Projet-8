@@ -1,15 +1,15 @@
 import React from 'react';
-import Appartements from './Appartements.jsx';
+import AppartementsList from './AppartementsList.jsx';
 
 function CardsGrid() {
   return (
     <div className='background'>
-        <Appartements />
-        <Appartements />
-        <Appartements />
-        <Appartements />
-        <Appartements />
-        <Appartements />   
+        <AppartementsList />
+        <AppartementsList />
+        <AppartementsList />
+        <AppartementsList />
+        <AppartementsList />
+        <AppartementsList />   
     </div>
   )
 }

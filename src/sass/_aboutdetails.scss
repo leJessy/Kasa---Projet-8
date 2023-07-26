@@ -1,0 +1,62 @@
+@use "variables.scss" as c;
+
+.aboutus-page {
+    margin-left: 10%;
+    margin-right: 10%;
+    .BannerAbout {
+        margin-block: 2rem 4rem;
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 1.5rem;
+        }
+    }
+    .Menu_Colapse__about {
+        width: 80%;
+        margin: auto;
+    }
+    .About-page__fiabilite, .About-page__respect, .About-page__service, .About-page__securite {
+        p {
+            margin-block: 0;
+        }
+        
+        .fiabilite__title, .respect__title, .service__title, .securite__title {
+            background-color: c.$colour-primary;
+            color: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            i {
+                margin-left: auto;
+                font-size: 20px;
+            }
+            }
+        .fiabilite__content, .respect__content, .service__content, .securite__content {
+            background-color: #E3E3E3;
+            border-radius: 0 0 1.5rem 1.5rem;
+            padding: 1.3rem;
+            z-index: -1;
+            position: relative;
+            top: -15px;
+        }
+    }
+}
+
+@media screen and (width <= 825px) {
+    .aboutus-page {
+        margin-left: 2%;
+        margin-right: 2%;
+        .BannerAbout {
+            margin-block: 2rem 2rem;
+            img {
+                height: 250px;
+            }
+        }
+        .Menu_Colapse__about {
+            width: 100%;
+            margin: auto;
+        }
+    }
+}

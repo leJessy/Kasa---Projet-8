@@ -1,8 +1,11 @@
 @use "./sass/font.scss";
 @use "./sass/reset.scss";
 @use "./sass/variables.scss";
-@use "./sass/navbar.scss";
+@use "./sass/header.scss";
 @use "./sass/banner.scss";
 @use "./sass/cardsgrid";
-@use "./sass/appartements";
+@use "./sass/appartementsList";
 @use "./sass/footer";
+@use "./sass/error";
+@use "./sass/appartementsDetails";
+@use "./sass/aboutdetails";

@@ -18,6 +18,7 @@ body {
   margin-left: auto;
 }
 .navbar a {
+  text-decoration: none;
   padding: 2rem;
   color: #ff6060;
   font-size: 1.3rem;
@@ -76,9 +77,11 @@ body {
 @media screen and (width <= 1000px) {
   .banner {
     max-width: 95%;
+    height: 150px;
   }
   .banner .banner_text h1 {
     font-size: 2rem;
+    margin-left: 10px;
   }
 }
 .background {
@@ -106,6 +109,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
+    max-width: 100%;
   }
 }
 .cards_appart {
@@ -148,6 +152,237 @@ body {
 }
 .footer p {
   color: white;
+}
+
+.Error {
+  text-align: center;
+}
+.Error h1 {
+  color: #ff6060;
+  font-size: 10rem;
+}
+.Error h2 {
+  color: #ff6060;
+  font-size: 3rem;
+}
+.Error .Error_redirect {
+  color: #ff6060;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.Appartements-page {
+  color: #ff6060;
+  margin-top: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.Appartements-page img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Appartements-page__flats {
+  display: flex;
+}
+.Appartements-page__flats h3 {
+  margin-block: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.Appartements-page__flats .Appartements-page__title {
+  flex-grow: 1;
+}
+.Appartements-page__flats .Appartements-page__title h1 {
+  margin-block: 0;
+}
+.Appartements-page__flats .Appartements-page__title .adjectifs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+  gap: 1rem;
+}
+.Appartements-page__flats .Appartements-page__title .adjectifs p {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: 1px solid;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.Appartements-page__flats .Appartements-page__details .Appartements-page__owner {
+  display: flex;
+  gap: 1rem;
+}
+.Appartements-page__flats .Appartements-page__details .Appartements-page__owner .Appartements-page__details__photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.Appartements-page__flats .Appartements-page__details .Appartements-page__details__ratings {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 0.1rem;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.Appartements-page__flats .Appartements-page__details .Appartements-page__details__ratings .Full {
+  color: #ff6060;
+}
+.Appartements-page__flats .Appartements-page__details .Appartements-page__details__ratings .Empty {
+  color: #E3E3E3;
+}
+.Appartements-page__flats h2 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.Appartements-page__description p {
+  margin-block: 0;
+}
+.Appartements-page__description .description__title {
+  background-color: #ff6060;
+  color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.Appartements-page__description .description__title i {
+  margin-left: auto;
+  font-size: 20px;
+}
+.Appartements-page__description .description__content {
+  background-color: #E3E3E3;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 1.3rem;
+  z-index: -1;
+  position: relative;
+  top: -15px;
+}
+
+.Appartements-page__equipements p {
+  margin-block: 0;
+}
+.Appartements-page__equipements .equipements__title {
+  background-color: #ff6060;
+  color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.Appartements-page__equipements .equipements__title i {
+  margin-left: auto;
+  font-size: 20px;
+}
+.Appartements-page__equipements .equipements__content {
+  background-color: #E3E3E3;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 1.3rem;
+  z-index: -1;
+  position: relative;
+  top: -15px;
+}
+
+.Menu_Colapse {
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (width <= 825px) {
+  .Menu_Colapse {
+    flex-direction: column;
+  }
+  .Appartements-page__flats {
+    flex-direction: column;
+  }
+  .Appartements-page__details {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Appartements-page__owner {
+    flex: 2;
+    justify-content: end;
+  }
+  .adjectifs {
+    gap: 0.2rem;
+  }
+  .adjectifs p {
+    font-size: 15px;
+    padding-inline: 0;
+    padding-block: 0;
+  }
+  .Appartements-page {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .Appartements-page__details__ratings {
+    position: relative;
+    top: -25px;
+  }
+}
+.aboutus-page {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.aboutus-page .BannerAbout {
+  margin-block: 2rem 4rem;
+}
+.aboutus-page .BannerAbout img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.aboutus-page .Menu_Colapse__about {
+  width: 80%;
+  margin: auto;
+}
+.aboutus-page .About-page__fiabilite p, .aboutus-page .About-page__respect p, .aboutus-page .About-page__service p, .aboutus-page .About-page__securite p {
+  margin-block: 0;
+}
+.aboutus-page .About-page__fiabilite .fiabilite__title, .aboutus-page .About-page__fiabilite .respect__title, .aboutus-page .About-page__fiabilite .service__title, .aboutus-page .About-page__fiabilite .securite__title, .aboutus-page .About-page__respect .fiabilite__title, .aboutus-page .About-page__respect .respect__title, .aboutus-page .About-page__respect .service__title, .aboutus-page .About-page__respect .securite__title, .aboutus-page .About-page__service .fiabilite__title, .aboutus-page .About-page__service .respect__title, .aboutus-page .About-page__service .service__title, .aboutus-page .About-page__service .securite__title, .aboutus-page .About-page__securite .fiabilite__title, .aboutus-page .About-page__securite .respect__title, .aboutus-page .About-page__securite .service__title, .aboutus-page .About-page__securite .securite__title {
+  background-color: #ff6060;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.aboutus-page .About-page__fiabilite .fiabilite__title i, .aboutus-page .About-page__fiabilite .respect__title i, .aboutus-page .About-page__fiabilite .service__title i, .aboutus-page .About-page__fiabilite .securite__title i, .aboutus-page .About-page__respect .fiabilite__title i, .aboutus-page .About-page__respect .respect__title i, .aboutus-page .About-page__respect .service__title i, .aboutus-page .About-page__respect .securite__title i, .aboutus-page .About-page__service .fiabilite__title i, .aboutus-page .About-page__service .respect__title i, .aboutus-page .About-page__service .service__title i, .aboutus-page .About-page__service .securite__title i, .aboutus-page .About-page__securite .fiabilite__title i, .aboutus-page .About-page__securite .respect__title i, .aboutus-page .About-page__securite .service__title i, .aboutus-page .About-page__securite .securite__title i {
+  margin-left: auto;
+  font-size: 20px;
+}
+.aboutus-page .About-page__fiabilite .fiabilite__content, .aboutus-page .About-page__fiabilite .respect__content, .aboutus-page .About-page__fiabilite .service__content, .aboutus-page .About-page__fiabilite .securite__content, .aboutus-page .About-page__respect .fiabilite__content, .aboutus-page .About-page__respect .respect__content, .aboutus-page .About-page__respect .service__content, .aboutus-page .About-page__respect .securite__content, .aboutus-page .About-page__service .fiabilite__content, .aboutus-page .About-page__service .respect__content, .aboutus-page .About-page__service .service__content, .aboutus-page .About-page__service .securite__content, .aboutus-page .About-page__securite .fiabilite__content, .aboutus-page .About-page__securite .respect__content, .aboutus-page .About-page__securite .service__content, .aboutus-page .About-page__securite .securite__content {
+  background-color: #E3E3E3;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 1.3rem;
+  z-index: -1;
+  position: relative;
+  top: -15px;
+}
+
+@media screen and (width <= 825px) {
+  .aboutus-page {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .aboutus-page .BannerAbout {
+    margin-block: 2rem 2rem;
+  }
+  .aboutus-page .BannerAbout img {
+    height: 250px;
+  }
+  .aboutus-page .Menu_Colapse__about {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
