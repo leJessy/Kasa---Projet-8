@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function AppartementsBanner(props) {
+function AppartementsBanner({ appartment }) {
   return (
-        <div className='appartementsbanner'>
-            <img src={props.image} alt="Banner Appart" />
-        </div>
-  )
+    <div className="appartementsbanner">
+      <img src={appartment.pictures[0]} alt="Banner Appart" />
+    </div>
+  );
 }
 
-export default AppartementsBanner
+export default AppartementsBanner;

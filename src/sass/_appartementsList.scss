@@ -2,23 +2,23 @@
     width: 100%;
     position: relative;
     height: 250px;
-    .cards_appart_img {
-        width: 400px;
-        object-fit: cover;  
-        height: 250px;
-        border-radius: 1.5rem;
-    }
-    .cards_appart_text {
-        color: white;
-        text-shadow: 1px 1px 8px black;
-        position: absolute;
-        top: 175px;
-        left: 10px;
-        max-width: 50%;
-        font-weight: bold;
-    }
+}
+.cards_appart_img {
+    width: 400px;
+    object-fit: cover;  
+    height: 250px;
+    border-radius: 1.5rem;
 }
 
+.cards_appart_text {
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    position: absolute;
+    top: 175px;
+    left: 10px;
+    max-width: 50%;
+    font-weight: bold;
+}
 @media screen and (width <= 1000px) {
     .cards_appart {
         .cards_appart_text {

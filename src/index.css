@@ -117,13 +117,15 @@ body {
   position: relative;
   height: 250px;
 }
-.cards_appart .cards_appart_img {
+
+.cards_appart_img {
   width: 400px;
   object-fit: cover;
   height: 250px;
   border-radius: 1.5rem;
 }
-.cards_appart .cards_appart_text {
+
+.cards_appart_text {
   color: white;
   text-shadow: 1px 1px 8px black;
   position: absolute;
