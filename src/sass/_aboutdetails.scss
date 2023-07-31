@@ -60,3 +60,22 @@
         }
     }
 }
+
+.hidden {
+    visibility: hidden;
+}
+
+.fiabilite__content, .respect__content, .service__content, .securite__content {
+    animation: appear 1s ease-in-out;
+}
+
+@keyframes appear {
+    0% {
+       transform: translateY(-50%);
+       opacity: 0;
+    }
+    100% {
+       transform: translateY(0);
+       opacity: 1;
+    }
+}

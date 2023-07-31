@@ -181,8 +181,12 @@ body {
   margin-top: 2rem;
   margin-left: 10%;
   margin-right: 10%;
+  display: flex;
 }
 
+.Appartements-page__description {
+  flex-basis: 50%;
+}
 .Appartements-page__description p {
   margin-block: 0;
 }
@@ -205,8 +209,12 @@ body {
   z-index: -1;
   position: relative;
   top: -15px;
+  animation: appear 1s ease-in-out;
 }
 
+.Appartements-page__equipements {
+  flex-basis: 50%;
+}
 .Appartements-page__equipements p {
   margin-block: 0;
 }
@@ -229,6 +237,8 @@ body {
   z-index: -1;
   position: relative;
   top: -15px;
+  list-style: none;
+  animation: appear 1s ease-in-out;
 }
 
 .Menu_Colapse {
@@ -300,6 +310,24 @@ body {
   .aboutus-page .Menu_Colapse__about {
     width: 100%;
     margin: auto;
+  }
+}
+.hidden {
+  visibility: hidden;
+}
+
+.fiabilite__content, .respect__content, .service__content, .securite__content {
+  animation: appear 1s ease-in-out;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .appartementsbanner {
@@ -378,7 +406,7 @@ body {
   color: #ff6060;
 }
 .Spec-page__flats .Spec-page__details .Spec-page__details__ratings .Empty {
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 .Spec-page__flats h2 {
   margin-bottom: 0;

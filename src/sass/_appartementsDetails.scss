@@ -5,9 +5,11 @@
     margin-top: 2rem;
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
 }
 
 .Appartements-page__description {
+    flex-basis: 50%;
     p {
         margin-block: 0;
     }
@@ -31,10 +33,12 @@
         z-index: -1;
         position: relative;
         top: -15px;
+        animation: appear 1s ease-in-out;
     }
 }
 
 .Appartements-page__equipements {
+    flex-basis: 50%;
     p {
         margin-block: 0;
     }
@@ -58,12 +62,15 @@
         z-index: -1;
         position: relative;
         top: -15px;
+        list-style: none;
+        animation: appear 1s ease-in-out;
     }
 }
 
 .Menu_Colapse {
     display: flex;
     gap: 2rem;
+
 }
 
 @media screen and (width <= 825px) {
