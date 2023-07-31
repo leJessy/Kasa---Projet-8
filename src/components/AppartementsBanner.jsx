@@ -9,3 +9,4 @@ function AppartementsBanner({ appartment }) {
 }
 
 export default AppartementsBanner;
+

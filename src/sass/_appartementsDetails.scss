@@ -33,7 +33,7 @@
         z-index: -1;
         position: relative;
         top: -15px;
-        animation: appear 1s ease-in-out;
+        animation: appear 200ms ease-in-out;
     }
 }
 
@@ -63,7 +63,7 @@
         position: relative;
         top: -15px;
         list-style: none;
-        animation: appear 1s ease-in-out;
+        animation: appear 200ms ease-in-out;
     }
 }
 

@@ -21,6 +21,10 @@ const router = createBrowserRouter([
     path: "/appartements/:id",
     element: <Accomodations />,
   },
+  {
+    path: "/404",
+    element: <Error />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
