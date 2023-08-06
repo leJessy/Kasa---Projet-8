@@ -76,6 +76,7 @@
 @media screen and (width <= 825px) {
     .Menu_Colapse {
         flex-direction: column;
+        gap: 0;
     }
     .Appartements-page {
         margin-left: 2%;

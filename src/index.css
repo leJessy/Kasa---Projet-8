@@ -249,6 +249,7 @@ body {
 @media screen and (width <= 825px) {
   .Menu_Colapse {
     flex-direction: column;
+    gap: 0;
   }
   .Appartements-page {
     margin-left: 2%;
@@ -334,13 +335,44 @@ body {
   margin-top: 2rem;
   margin-left: 10%;
   margin-right: 10%;
+  position: relative;
 }
 .appartementsbanner img {
   width: 100%;
-  height: 350px;
+  height: 400px;
   object-fit: cover;
   border-radius: 1.5rem;
   margin-bottom: 1rem;
+}
+.appartementsbanner .changeslide {
+  display: flex;
+  justify-content: space-between;
+}
+.appartementsbanner .changeslide button {
+  border: none;
+  background: none;
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+}
+.appartementsbanner .changeslide .btn-right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.appartementsbanner .changeslide .btn-left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.appartementsbanner .changeslide .slide-count {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  bottom: 2.5rem;
+  width: 50px;
+  color: white;
 }
 
 @media screen and (width <= 825px) {
@@ -373,8 +405,10 @@ body {
 }
 .Spec-page__flats .Spec-page__title .tags {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 180px));
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
 }
 .Spec-page__flats .Spec-page__title .tags p {
   padding-inline: 1rem;

@@ -22,8 +22,10 @@
     }
     .tags {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 180px));
+      gap: 0.5rem;
+      text-align: center;
+      align-items: center;
       p {
         padding-inline: 1rem;
         padding-block: 0.5rem;

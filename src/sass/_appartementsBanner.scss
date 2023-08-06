@@ -2,12 +2,43 @@
     margin-top: 2rem;
     margin-left: 10%;
     margin-right: 10%;
+    position: relative;
     img {
         width: 100%;
-        height: 350px;
+        height: 400px;
         object-fit: cover;
         border-radius: 1.5rem;
         margin-bottom: 1rem;
+    }
+    .changeslide {
+        display: flex;
+        justify-content: space-between;
+        button  {
+            border: none;
+            background: none;
+            font-size: 100px;
+            position: absolute;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-right {
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .btn-left {
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .slide-count {
+            position: absolute;
+            left: 50%;
+            margin-left: -25px;
+            bottom: 2.5rem;
+            width: 50px;
+            color: white;
+        }
     }
 }  
 
@@ -17,3 +48,4 @@
         margin-right: 2%;
     }
 }
+
