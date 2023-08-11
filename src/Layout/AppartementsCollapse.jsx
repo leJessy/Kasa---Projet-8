@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-function AppartementsDetails({ appartment }) {
+function AppartementsCollapse({ appartment }) {
     const [descriptionDisplayed, setDescriptionDisplayed] = useState();
     const [equipmentsDisplayed, setEquipmentsDisplayed] = useState();
 
@@ -32,4 +32,4 @@ function AppartementsDetails({ appartment }) {
   )
 }
 
-export default AppartementsDetails
+export default AppartementsCollapse

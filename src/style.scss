@@ -4,10 +4,10 @@
 @use "./sass/header.scss";
 @use "./sass/banner.scss";
 @use "./sass/cardsgrid";
-@use "./sass/appartementsList";
+@use "./sass/cards";
 @use "./sass/footer";
 @use "./sass/error";
-@use "./sass/appartementsDetails";
-@use "./sass/aboutdetails";
-@use "./sass/_appartementsBanner";
-@use "./components/AppartementsSpec.scss";
+@use "./sass/appartementsCollapse";
+@use "./sass/aboutCollapse";
+@use "./sass/_appartementsSlide";
+@use "./sass/AppartementsSpec.scss";

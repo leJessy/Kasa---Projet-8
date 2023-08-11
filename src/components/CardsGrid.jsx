@@ -1,5 +1,5 @@
 import React from "react";
-import AppartementsList from "./AppartementsList.jsx";
+import AppartementsList from "./Cards.jsx";
 import appartments from "../database/logements.json"
 
 function CardsGrid() {
