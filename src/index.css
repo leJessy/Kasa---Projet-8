@@ -380,6 +380,9 @@ body {
     margin-left: 2%;
     margin-right: 2%;
   }
+  .slide-count {
+    display: none;
+  }
 }
 .Spec-page {
   color: #ff6060;

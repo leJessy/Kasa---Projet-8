@@ -12,7 +12,7 @@ function AppartementsBanner({ appartment }) {
       prevSlide === 0 ? appartment.pictures.length - 1 : prevSlide - 1
     );
   };
-
+  
   return (
     <div className="appartementsbanner">
       <div className="slideshow">
